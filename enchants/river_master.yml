@@ -1,0 +1,39 @@
+Definition:
+  DisplayName: Речной мастер
+  Description:
+  - Увеличивает дальность заброса.
+  Weight: 10
+  MaxLevel: 5
+  MinCost:
+    Base: 1
+    Per_Level: 12
+  MaxCost:
+    Base: 5
+    Per_Level: 12
+  AnvilCost: 8
+  SupportedItems: fishing_rod
+  PrimaryItems: fishing_rod
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - PLAINS_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+RiverMaster:
+  # Multiplies the casted fish hook's velocity by specified value.
+  # This does not bypasses the hook distance limits.
+  Distance_Modifier:
+    Base: 1.0
+    Per_Level: 0.25
+    Capacity: 3.0
+    Action: ADD

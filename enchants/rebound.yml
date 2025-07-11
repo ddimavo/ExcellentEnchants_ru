@@ -1,0 +1,47 @@
+Definition:
+  DisplayName: Отскок
+  Description:
+  - Эффект приземления на слизневый блок.
+  Weight: 2
+  MaxLevel: 1
+  MinCost:
+    Base: 4
+    Per_Level: 64
+  MaxCost:
+    Base: 64
+    Per_Level: 64
+  AnvilCost: 2
+  SupportedItems: boots
+  PrimaryItems: boots
+  Exclusives:
+  - minecraft:feather_falling
+Distribution:
+  Treasure: true
+  Tradeable: true
+  TradeTypes:
+  - SWAMP_COMMON
+  On_Mob_Spawn_Equipment: false
+  On_Traded_Equipment: false
+  On_Random_Loot: true
+  Discoverable: false
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Rebound:
+  # Sets bounce power modifier based on fall distance.
+  # Greater value = greater rebound.
+  Modifier:
+    Base: 0.2
+    Per_Level: 0.1
+    Capacity: 0.5
+    Action: ADD
+  # Sets maximal bounce power modifier value.
+  # Greater value = greater rebound.
+  Capacity:
+    Base: 0.75
+    Per_Level: 0.15
+    Capacity: 1.5
+    Action: ADD

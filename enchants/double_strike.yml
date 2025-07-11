@@ -1,0 +1,38 @@
+# ▒▓███████▓▒░ double_strike.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Двойной удар
+  Description:
+  - '%enchantment_trigger_chance%% шанс нанести двойной урон.'
+  Weight: 1
+  MaxLevel: 2
+  MinCost:
+    Base: 2
+    Per_Level: 32
+  MaxCost:
+    Base: 8
+    Per_Level: 32
+  AnvilCost: 6
+  SupportedItems: swords_axes
+  PrimaryItems: sword
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - TAIGA_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 1.0
+    Per_Level: 2.0
+    Capacity: 100.0
+    Action: ADD

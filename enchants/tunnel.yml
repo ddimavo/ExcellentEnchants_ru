@@ -1,0 +1,36 @@
+Definition:
+  DisplayName: Туннель
+  Description:
+  - Добывает несколько блоков одновременно в определённой форме.
+  Weight: 1
+  MaxLevel: 3
+  MinCost:
+    Base: 5
+    Per_Level: 17
+  MaxCost:
+    Base: 12
+    Per_Level: 17
+  AnvilCost: 4
+  SupportedItems: mining_tools
+  PrimaryItems: pickaxe
+  Exclusives:
+  - excellentenchants:veinminer
+  - excellentenchants:blast_mining
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - SAVANNA_SPECIAL
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Tunnel:
+  # Sets whether or not enchantment will have no effect when crouching.
+  Disable_On_Crouch: true

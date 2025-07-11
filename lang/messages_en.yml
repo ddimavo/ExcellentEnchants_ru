@@ -1,0 +1,32 @@
+Command:
+  Argument:
+    Name:
+      Level: level
+      Slot: slot
+  List:
+    Desc: List of custom enchantments.
+    DoneOthers: <lgray>Opened enchantments GUI for <lyellow>%player_name%</lyellow>.</lgray>
+  Enchant:
+    Desc: Enchant item in specific slot.
+    Done:
+      Self: <lgray><lyellow>%item%</lyellow> enchanted with <lyellow>%enchant% %level%</lyellow>!</lgray>
+      Others: <lgray><lyellow>%player_display_name%</lyellow>'s <lyellow>%item%</lyellow> enchanted with <lyellow>%enchant% %level%</lyellow>!</lgray>
+    Error:
+      NoItem: <lred>There is no item to enchant!</lred>
+  Disenchant:
+    Desc: Disenchant item in specific slot.
+    Done:
+      Self: <lgray><lyellow>%item%</lyellow> disenchanted from <lyellow>%enchant%</lyellow>!</lgray>
+      Others: <lgray><lyellow>%player_display_name%</lyellow>'s <lyellow>%item%</lyellow> disenchanted from <lyellow>%enchant%</lyellow>!</lgray>
+  Book:
+    Desc: Give a book with specific enchantment.
+    Done: <lgray>Given <lyellow>%enchant%</lyellow> enchanted book to <lyellow>%player_display_name%</lyellow>.</lgray>
+  GetFuel:
+    Desc: Get enchantment fuel item.
+    Done: <lgray>You got <lyellow>x%amount% %name%</lyellow>.</lgray>
+    Error:
+      NoCharges: <lgray>Enchantment <lred>%name%</lred> don't have charges.</lgray>
+Error:
+  Command:
+    Argument:
+      InvalidSlot: <lgray><lred>%value%</lred> is not a valid slot!</lgray>

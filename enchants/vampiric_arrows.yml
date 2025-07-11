@@ -1,0 +1,53 @@
+Definition:
+  DisplayName: Вампирические Стрелы
+  Description:
+  - '%enchantment_trigger_chance%% шанс восстановить %amount%❤ при попадании стрелы.'
+  Weight: 2
+  MaxLevel: 3
+  MinCost:
+    Base: 5
+    Per_Level: 19
+  MaxCost:
+    Base: 12
+    Per_Level: 19
+  AnvilCost: 7
+  SupportedItems: bow_crossbow
+  PrimaryItems: bow_crossbow
+  Exclusives:
+  - excellentenchants:ender_bow
+  - excellentenchants:bomber
+  - excellentenchants:ghast
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - SWAMP_SPECIAL
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+ArrowEffects:
+  # Sets projectile particle trail effect.
+  Trail:
+    Name: DUST
+    Color: 255,0,0
+    Size: 1.0
+Probability:
+  Trigger_Chance:
+    Base: 20.0
+    Per_Level: 5.0
+    Capacity: 100.0
+    Action: ADD
+Vampire:
+  # Amount of hearts to be restore.
+  Heal_Amount:
+    Base: 1.0
+    Per_Level: 0.5
+    Capacity: 5.0
+    Action: ADD

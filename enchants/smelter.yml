@@ -1,0 +1,48 @@
+Definition:
+  DisplayName: Плавильщик
+  Description:
+  - С %enchantment_trigger_chance%% шансом переплавляет добытые блоки.
+  Weight: 5
+  MaxLevel: 5
+  MinCost:
+    Base: 1
+    Per_Level: 12
+  MaxCost:
+    Base: 4
+    Per_Level: 12
+  AnvilCost: 2
+  SupportedItems: tool
+  PrimaryItems: mining_tools
+  Exclusives:
+  - minecraft:silk_touch
+  - excellentenchants:silk_chest
+  - excellentenchants:silk_spawner
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - DESERT_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 15.0
+    Per_Level: 5.0
+    Capacity: 100.0
+    Action: ADD
+Smelter:
+  # Sets whether or not enchantment will have no effect when crouching.
+  Disable_On_Crouch: true
+  # Sound to play on smelting.
+  Sound: block.lava.extinguish;1.0;1.0
+  # List of blocks / items that are immune to the Smelter effect.
+  Exempted_Blocks:
+  - cobblestone

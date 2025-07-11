@@ -1,0 +1,38 @@
+Definition:
+  DisplayName: Мудрость
+  Description:
+  - Мобы дают на x%modifier% больше XP.
+  Weight: 5
+  MaxLevel: 5
+  MinCost:
+    Base: 1
+    Per_Level: 9
+  MaxCost:
+    Base: 7
+    Per_Level: 9
+  AnvilCost: 3
+  SupportedItems: swords_axes
+  PrimaryItems: sword
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - DESERT_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Wisdom:
+  # Exp modifier value. The original exp amount will be multiplied on this value.
+  XP_Modifier:
+    Base: 1.0
+    Per_Level: 0.5
+    Capacity: 3.0
+    Action: ADD

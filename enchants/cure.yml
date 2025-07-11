@@ -1,0 +1,38 @@
+# ▒▓███████▓▒░ cure.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Лечение
+  Description:
+  - '%enchantment_trigger_chance%% шанс излечить Зомбифицированного Свинозомби и Деревенского Зомби при ударе.'
+  Weight: 10
+  MaxLevel: 3
+  MinCost:
+    Base: 1
+    Per_Level: 17
+  MaxCost:
+    Base: 4
+    Per_Level: 17
+  AnvilCost: 3
+  SupportedItems: swords_axes
+  PrimaryItems: sword
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - SAVANNA_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 10.0
+    Per_Level: 10.0
+    Capacity: 100.0
+    Action: ADD

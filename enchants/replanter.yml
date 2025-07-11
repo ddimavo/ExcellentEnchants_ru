@@ -1,0 +1,42 @@
+Definition:
+  DisplayName: Пересаживатель
+  Description:
+  - Автоматически пересаживает урожай при правом клике и сборе.
+  Weight: 1
+  MaxLevel: 1
+  MinCost:
+    Base: 5
+    Per_Level: 48
+  MaxCost:
+    Base: 48
+    Per_Level: 48
+  AnvilCost: 6
+  SupportedItems: hoe
+  PrimaryItems: hoe
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - PLAINS_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 100.0
+    Per_Level: 0.0
+    Capacity: 100.0
+    Action: ADD
+Replanter:
+  # When 'true', player will be able to replant crops when right-clicking farmland blocks.
+  On_Right_Click: true
+  # When 'true', crops will be automatically replanted when player break plants with enchanted tool in hand.
+  On_Plant_Break: true

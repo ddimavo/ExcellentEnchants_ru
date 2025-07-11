@@ -1,0 +1,43 @@
+Definition:
+  DisplayName: Дыхание под водой
+  Description:
+  - Дает постоянный эффект %enchantment_potion_type% %enchantment_potion_level%.
+  Weight: 1
+  MaxLevel: 1
+  MinCost:
+    Base: 5
+    Per_Level: 57
+  MaxCost:
+    Base: 57
+    Per_Level: 57
+  AnvilCost: 7
+  SupportedItems: helmet
+  PrimaryItems: helmet
+  Exclusives: []
+Distribution:
+  Treasure: true
+  Tradeable: true
+  TradeTypes:
+  - PLAINS_SPECIAL
+  On_Mob_Spawn_Equipment: false
+  On_Traded_Equipment: false
+  On_Random_Loot: true
+  Discoverable: false
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Period:
+  # Only triggers if the age (ticks lived) of the entity is divisible by the given number.
+  # Should be greater than and divisible by the global 'Tick_Interval' in the main plugin config.
+  # [20 ticks = 1 second]
+  Interval: 5
+PotionEffect:
+  # Effect amplifier.
+  Amplifier:
+    Base: 0.0
+    Per_Level: 1.0
+    Capacity: 5.0
+    Action: ADD

@@ -1,0 +1,41 @@
+# ▒▓███████▓▒░ nimble.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Ловкость
+  Description:
+  - Перемещает весь дроп с существ прямо в инвентарь.
+  Weight: 2
+  MaxLevel: 1
+  MinCost:
+    Base: 2
+    Per_Level: 51
+  MaxCost:
+    Base: 51
+    Per_Level: 51
+  AnvilCost: 3
+  SupportedItems: swords_axes
+  PrimaryItems: sword
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - JUNGLE_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 100.0
+    Per_Level: 0.0
+    Capacity: 100.0
+    Action: ADD
+Nimble:
+  # Sets whether or not to ignore drops from players.
+  Ignore_Players: false

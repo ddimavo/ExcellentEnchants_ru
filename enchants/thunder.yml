@@ -1,0 +1,46 @@
+Definition:
+  DisplayName: Гром
+  Description:
+  - '%enchantment_trigger_chance%% шанс ударить молнией с дополнительным уроном %damage%❤.'
+  Weight: 5
+  MaxLevel: 5
+  MinCost:
+    Base: 4
+    Per_Level: 12
+  MaxCost:
+    Base: 9
+    Per_Level: 12
+  AnvilCost: 6
+  SupportedItems: swords_axes
+  PrimaryItems: sword
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - PLAINS_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 5.0
+    Per_Level: 2.0
+    Capacity: 100.0
+    Action: ADD
+Thunder:
+  # Sets whether or not enchantment will have effect only during thunderstorm in the world.
+  During_Thunderstorm_Only: false
+  # Sets additional damage caused by enchantment's effect.
+  Damage_Modifier:
+    Base: 1.25
+    Per_Level: 0.25
+    Capacity: 1000.0
+    Action: ADD

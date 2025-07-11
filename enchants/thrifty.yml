@@ -1,0 +1,50 @@
+Definition:
+  DisplayName: Бережливый
+  Description:
+  - '%enchantment_trigger_chance%% шанс выпадения яйца призыва с мобов.'
+  Weight: 2
+  MaxLevel: 3
+  MinCost:
+    Base: 4
+    Per_Level: 19
+  MaxCost:
+    Base: 11
+    Per_Level: 19
+  AnvilCost: 7
+  SupportedItems: swords_axes
+  PrimaryItems: sword
+  Exclusives: []
+Distribution:
+  Treasure: true
+  Tradeable: true
+  TradeTypes:
+  - JUNGLE_SPECIAL
+  On_Mob_Spawn_Equipment: false
+  On_Traded_Equipment: false
+  On_Random_Loot: true
+  Discoverable: false
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 0.0
+    Per_Level: 1.0
+    Capacity: 100.0
+    Action: ADD
+Thrifty:
+  # List of mobs exempted from this enchantment.
+  Ignored_Mobs:
+  - WITHER
+  - ENDER_DRAGON
+  # List of mobs exempted from this enchantment when spawned by specified reasons.
+  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/entity/CreatureSpawnEvent.SpawnReason.html
+  Ignored_Spawn_Reasons:
+  - DISPENSE_EGG
+  - SPAWNER
+  - SPAWNER_EGG
+  # Sets whether or not MythicMobs should be exempted from this enchantment.
+  Ignored_MythicMobs: true

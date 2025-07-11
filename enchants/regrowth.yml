@@ -1,0 +1,61 @@
+Definition:
+  DisplayName: Регенерация
+  Description:
+  - Восстанавливает %amount%❤ каждые несколько секунд.
+  Weight: 2
+  MaxLevel: 4
+  MinCost:
+    Base: 1
+    Per_Level: 15
+  MaxCost:
+    Base: 5
+    Per_Level: 15
+  AnvilCost: 8
+  SupportedItems: chestplate_elytra
+  PrimaryItems: chestplate
+  Exclusives: []
+Distribution:
+  Treasure: true
+  Tradeable: true
+  TradeTypes:
+  - JUNGLE_SPECIAL
+  On_Mob_Spawn_Equipment: false
+  On_Traded_Equipment: false
+  On_Random_Loot: true
+  Discoverable: false
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 100.0
+    Per_Level: 0.0
+    Capacity: 100.0
+    Action: ADD
+Period:
+  # Only triggers if the age (ticks lived) of the entity is divisible by the given number.
+  # Should be greater than and divisible by the global 'Tick_Interval' in the main plugin config.
+  # [20 ticks = 1 second]
+  Interval: 15
+Regrowth:
+  # Min. health required for the regrowth effect.
+  Min_Health:
+    Base: 0.5
+    Per_Level: 0.0
+    Capacity: -1.0
+    Action: ADD
+  # Max. health where the regrowth stops.
+  Max_Health:
+    Base: 20.0
+    Per_Level: 0.0
+    Capacity: -1.0
+    Action: ADD
+  # Amount of hearts to be restored.
+  Heal_Amount:
+    Base: 0.1
+    Per_Level: 0.1
+    Capacity: 1.0
+    Action: ADD

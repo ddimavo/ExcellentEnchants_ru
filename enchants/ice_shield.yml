@@ -1,0 +1,51 @@
+# ▒▓███████▓▒░ ice_shield.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Ледяной щит
+  Description:
+  - '%enchantment_trigger_chance%% шанс заморозить и наложить %enchantment_potion_type% %enchantment_potion_level% (%enchantment_potion_duration% сек.) на атакующего.'
+  Weight: 10
+  MaxLevel: 3
+  MinCost:
+    Base: 1
+    Per_Level: 16
+  MaxCost:
+    Base: 7
+    Per_Level: 16
+  AnvilCost: 7
+  SupportedItems: chestplate_elytra
+  PrimaryItems: chestplate
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - SNOW_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 5.0
+    Per_Level: 5.0
+    Capacity: 100.0
+    Action: ADD
+PotionEffect:
+  # Effect duration (in seconds).
+  Duration:
+    Base: 3.0
+    Per_Level: 1.0
+    Capacity: 10.0
+    Action: ADD
+  # Effect amplifier.
+  Amplifier:
+    Base: 0.0
+    Per_Level: 1.0
+    Capacity: 5.0
+    Action: ADD

@@ -1,0 +1,44 @@
+Definition:
+  DisplayName: Снайпер
+  Description:
+  - Увеличивает скорость снарядов на %amount%%.
+  Weight: 10
+  MaxLevel: 2
+  MinCost:
+    Base: 3
+    Per_Level: 29
+  MaxCost:
+    Base: 7
+    Per_Level: 29
+  AnvilCost: 2
+  SupportedItems: bow_crossbow
+  PrimaryItems: bow_crossbow
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - PLAINS_SPECIAL
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 100.0
+    Per_Level: 0.0
+    Capacity: 100.0
+    Action: ADD
+Sniper:
+  # Projectile's speed modifier.
+  Speed_Modifier:
+    Base: 1.0
+    Per_Level: 0.2
+    Capacity: 3.0
+    Action: ADD

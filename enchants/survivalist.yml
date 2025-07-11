@@ -1,0 +1,37 @@
+Definition:
+  DisplayName: Выживальщик
+  Description:
+  - Автоматически готовит пойманную сырую рыбу.
+  Weight: 2
+  MaxLevel: 1
+  MinCost:
+    Base: 3
+    Per_Level: 61
+  MaxCost:
+    Base: 61
+    Per_Level: 61
+  AnvilCost: 6
+  SupportedItems: fishing_rod
+  PrimaryItems: fishing_rod
+  Exclusives: []
+Distribution:
+  Treasure: true
+  Tradeable: true
+  TradeTypes:
+  - SNOW_SPECIAL
+  On_Mob_Spawn_Equipment: false
+  On_Traded_Equipment: false
+  On_Random_Loot: true
+  Discoverable: false
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 100.0
+    Per_Level: 0.0
+    Capacity: 100.0
+    Action: ADD

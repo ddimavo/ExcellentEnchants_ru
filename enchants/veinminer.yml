@@ -1,0 +1,62 @@
+Definition:
+  DisplayName: Бур
+  Description:
+  - Добывает до %amount% блоков жилы одновременно.
+  Weight: 2
+  MaxLevel: 3
+  MinCost:
+    Base: 5
+    Per_Level: 16
+  MaxCost:
+    Base: 9
+    Per_Level: 16
+  AnvilCost: 5
+  SupportedItems: pickaxe
+  PrimaryItems: pickaxe
+  Exclusives:
+  - excellentenchants:blast_mining
+  - excellentenchants:tunnel
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - PLAINS_SPECIAL
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Veinminer:
+  # Sets whether or not enchantment will have no effect when crouching.
+  Disable_On_Crouch: true
+  # Max. possible amount of blocks to be mined at the same time.
+  Block_Limit:
+    Base: 4.0
+    Per_Level: 1.0
+    Capacity: 16.0
+    Action: ADD
+  # List of blocks affected by this enchantment.
+  Block_List:
+  - DEEPSLATE_COPPER_ORE
+  - DEEPSLATE_IRON_ORE
+  - NETHER_GOLD_ORE
+  - DEEPSLATE_DIAMOND_ORE
+  - DEEPSLATE_LAPIS_ORE
+  - REDSTONE_ORE
+  - DEEPSLATE_COAL_ORE
+  - COPPER_ORE
+  - NETHER_QUARTZ_ORE
+  - DIAMOND_ORE
+  - LAPIS_ORE
+  - DEEPSLATE_REDSTONE_ORE
+  - EMERALD_ORE
+  - GOLD_ORE
+  - COAL_ORE
+  - DEEPSLATE_GOLD_ORE
+  - DEEPSLATE_EMERALD_ORE
+  - IRON_ORE

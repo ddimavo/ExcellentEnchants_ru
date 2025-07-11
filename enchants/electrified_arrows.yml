@@ -1,0 +1,52 @@
+# ▒▓███████▓▒░ electrified_arrows.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Электрические стрелы
+  Description:
+  - '%enchantment_trigger_chance%% шанс, что стрела вызовет молнию с дополнительным уроном %damage%❤.'
+  Weight: 5
+  MaxLevel: 3
+  MinCost:
+    Base: 3
+    Per_Level: 21
+  MaxCost:
+    Base: 8
+    Per_Level: 21
+  AnvilCost: 4
+  SupportedItems: bow_crossbow
+  PrimaryItems: bow_crossbow
+  Exclusives:
+  - excellentenchants:ender_bow
+  - excellentenchants:bomber
+  - excellentenchants:ghast
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - PLAINS_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+ArrowEffects:
+  # Sets projectile particle trail effect.
+  Trail:
+    Name: ELECTRIC_SPARK
+Probability:
+  Trigger_Chance:
+    Base: 0.0
+    Per_Level: 5.0
+    Capacity: 100.0
+    Action: ADD
+Electrified:
+  # Sets additional damage caused by enchantment's effect.
+  DamageAmount:
+    Base: 1.25
+    Per_Level: 0.25
+    Capacity: 1000.0
+    Action: ADD

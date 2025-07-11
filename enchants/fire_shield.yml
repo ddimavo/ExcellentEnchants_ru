@@ -1,0 +1,47 @@
+# ▒▓███████▓▒░ fire_shield.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Огненный щит
+  Description:
+  - '%enchantment_trigger_chance%% шанс поджечь атакующих на %duration% сек.'
+  Weight: 2
+  MaxLevel: 4
+  MinCost:
+    Base: 4
+    Per_Level: 12
+  MaxCost:
+    Base: 11
+    Per_Level: 12
+  AnvilCost: 3
+  SupportedItems: chestplate_elytra
+  PrimaryItems: chestplate
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - DESERT_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 4.0
+    Per_Level: 2.0
+    Capacity: 100.0
+    Action: ADD
+FireShield:
+  # Sets the fire duration (in seconds).
+  Duration:
+    Base: 4.0
+    Per_Level: 1.0
+    Capacity: 10.0
+    Action: ADD
+  # Controls whether Fire Resistance effect should be added to the enchantment's wearer.
+  AddResistance: true

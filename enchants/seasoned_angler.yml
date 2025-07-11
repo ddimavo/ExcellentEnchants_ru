@@ -1,0 +1,38 @@
+Definition:
+  DisplayName: Опытный Рыбак
+  Description:
+  - Увеличивает получаемый от рыбалки опыт на %amount%%.
+  Weight: 5
+  MaxLevel: 3
+  MinCost:
+    Base: 2
+    Per_Level: 15
+  MaxCost:
+    Base: 8
+    Per_Level: 15
+  AnvilCost: 7
+  SupportedItems: fishing_rod
+  PrimaryItems: fishing_rod
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - PLAINS_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+SeasonedAngler:
+  # Amount (in percent) of additional XP from fishing.
+  XP_Modifier:
+    Base: 0.0
+    Per_Level: 50.0
+    Capacity: 300.0
+    Action: ADD

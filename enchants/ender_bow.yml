@@ -1,0 +1,62 @@
+# ▒▓███████▓▒░ ender_bow.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Лук Края
+  Description:
+  - Стреляет жемчугом Края вместо стрел.
+  Weight: 1
+  MaxLevel: 1
+  MinCost:
+    Base: 1
+    Per_Level: 60
+  MaxCost:
+    Base: 60
+    Per_Level: 60
+  AnvilCost: 3
+  SupportedItems: bow
+  PrimaryItems: bow
+  Exclusives:
+  - minecraft:power
+  - minecraft:flame
+  - excellentenchants:bomber
+  - excellentenchants:ghast
+  - minecraft:punch
+Distribution:
+  Treasure: true
+  Tradeable: true
+  TradeTypes:
+  - PLAINS_SPECIAL
+  On_Mob_Spawn_Equipment: false
+  On_Traded_Equipment: false
+  On_Random_Loot: true
+  Discoverable: false
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 100.0
+    Per_Level: 0.0
+    Capacity: 100.0
+    Action: ADD
+Charges:
+  # Maximum amount of charges for the enchantment.
+  Max_Amount:
+    Base: 50.0
+    Per_Level: 0.0
+    Capacity: -1.0
+    Action: ADD
+  # Controls how many charges consumed when enchantment is triggered.
+  Consume_Amount: 1
+  # Controls how many charges added per fuel item.
+  Recharge_Amount: 1
+  CustomFuel:
+    # Controls if custom fuel item should be used for this enchantment.
+    Enabled: true
+    # Custom fuel item.
+    # https://nightexpressdev.com/nightcore/configuration/item-formation/
+    Item:
+      Material: minecraft:ender_pearl
+      Lore: []

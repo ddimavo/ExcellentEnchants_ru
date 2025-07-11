@@ -1,0 +1,32 @@
+Command:
+  Argument:
+    Name:
+      Level: уровень
+      Slot: слот
+  List:
+    Desc: Список пользовательских зачарований.
+    DoneOthers: <lgray>Открыт GUI зачарований для <lyellow>%player_name%</lyellow>.</lgray>
+  Enchant:
+    Desc: Зачаровать предмет в указанном слоте.
+    Done:
+      Self: <lgray><lyellow>%item%</lyellow> зачарован(а) <lyellow>%enchant% %level%</lyellow>!</lgray>
+      Others: <lgray><lyellow>%player_display_name%</lyellow> зачаровал(а) <lyellow>%item%</lyellow> <lyellow>%enchant% %level%</lyellow>!</lgray>
+    Error:
+      NoItem: <lred>Нет предмета для зачарования!</lred>
+  Disenchant:
+    Desc: Снять чары с предмета в указанном слоте.
+    Done:
+      Self: <lgray>С <lyellow>%item%</lyellow> снято зачарование <lyellow>%enchant%</lyellow>!</lgray>
+      Others: <lgray>С <lyellow>%item%</lyellow> <lyellow>%player_display_name%</lyellow> снято зачарование <lyellow>%enchant%</lyellow>!</lgray>
+  Book:
+    Desc: Выдать книгу с указанным зачарованием.
+    Done: <lgray>Выдана книга с зачарованием <lyellow>%enchant%</lyellow> игроку <lyellow>%player_display_name%</lyellow>.</lgray>
+  GetFuel:
+    Desc: Получить предмет-топливо для зачарований.
+    Done: <lgray>Вы получили <lyellow>x%amount% %name%</lyellow>.</lgray>
+    Error:
+      NoCharges: <lgray>Зачарование <lred>%name%</lred> не имеет зарядов.</lgray>
+Error:
+  Command:
+    Argument:
+      InvalidSlot: <lgray>Слот <lred>%value%</lred> недопустим!</lgray>

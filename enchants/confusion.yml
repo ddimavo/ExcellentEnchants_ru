@@ -1,0 +1,51 @@
+# ▒▓███████▓▒░ confusion.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Замешательство
+  Description:
+  - '%enchantment_trigger_chance%% шанс наложить %enchantment_potion_type% %enchantment_potion_level% (%enchantment_potion_duration% сек.) при ударе.'
+  Weight: 10
+  MaxLevel: 2
+  MinCost:
+    Base: 5
+    Per_Level: 31
+  MaxCost:
+    Base: 11
+    Per_Level: 31
+  AnvilCost: 5
+  SupportedItems: swords_axes
+  PrimaryItems: sword
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - SNOW_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 0.0
+    Per_Level: 8.0
+    Capacity: 100.0
+    Action: ADD
+PotionEffect:
+  # Effect duration (in seconds).
+  Duration:
+    Base: 10.0
+    Per_Level: 5.0
+    Capacity: 30.0
+    Action: ADD
+  # Effect amplifier.
+  Amplifier:
+    Base: 1.0
+    Per_Level: 0.0
+    Capacity: 1.0
+    Action: ADD

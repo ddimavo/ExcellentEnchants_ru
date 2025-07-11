@@ -1,0 +1,43 @@
+# ▒▓███████▓▒░ elemental_protection.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Стихийная защита
+  Description:
+  - Уменьшает урон от зелий и стихий на %amount%%.
+  Weight: 10
+  MaxLevel: 4
+  MinCost:
+    Base: 4
+    Per_Level: 13
+  MaxCost:
+    Base: 7
+    Per_Level: 13
+  AnvilCost: 2
+  SupportedItems: armor
+  PrimaryItems: armor
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - SWAMP_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Protection:
+  # Protection amount given by enchantment.
+  Amount:
+    Base: 0.0
+    Per_Level: 5.0
+    Capacity: 25.0
+    Action: ADD
+  # Max. possible protection value from all armor pieces.
+  Capacity: 80.0
+  # Controls if protection amount is in percent.
+  Multiplier: true

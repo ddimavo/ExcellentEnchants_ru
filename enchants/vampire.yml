@@ -1,0 +1,46 @@
+Definition:
+  DisplayName: Вампир
+  Description:
+  - '%enchantment_trigger_chance%% шанс восстановить %amount%❤ при ударе.'
+  Weight: 2
+  MaxLevel: 3
+  MinCost:
+    Base: 5
+    Per_Level: 15
+  MaxCost:
+    Base: 12
+    Per_Level: 15
+  AnvilCost: 6
+  SupportedItems: swords_axes
+  PrimaryItems: sword
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - SAVANNA_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 8.0
+    Per_Level: 4.0
+    Capacity: 100.0
+    Action: ADD
+Vampire:
+  # Amount of health to be restored for attacker.
+  Amount:
+    Base: 0.25
+    Per_Level: 0.25
+    Capacity: 10.0
+    Action: ADD
+  # When 'true', the option above will work as a multiplier of the inflicted damage.
+  Multiplier: false

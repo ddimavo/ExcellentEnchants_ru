@@ -1,0 +1,44 @@
+# ▒▓███████▓▒░ haste.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Ускорение
+  Description:
+  - Дает постоянный эффект %enchantment_potion_type% %enchantment_potion_level%.
+  Weight: 2
+  MaxLevel: 3
+  MinCost:
+    Base: 3
+    Per_Level: 16
+  MaxCost:
+    Base: 7
+    Per_Level: 16
+  AnvilCost: 5
+  SupportedItems: tool
+  PrimaryItems: mining_tools
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - SAVANNA_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Period:
+  # Only triggers if the age (ticks lived) of the entity is divisible by the given number.
+  # Should be greater than and divisible by the global 'Tick_Interval' in the main plugin config.
+  # [20 ticks = 1 second]
+  Interval: 5
+PotionEffect:
+  # Effect amplifier.
+  Amplifier:
+    Base: 0.0
+    Per_Level: 1.0
+    Capacity: 5.0
+    Action: ADD

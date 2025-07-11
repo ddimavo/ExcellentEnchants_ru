@@ -1,0 +1,45 @@
+# ▒▓███████▓▒░ lucky_miner.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Удачливый шахтер
+  Description:
+  - '%enchantment_trigger_chance%% шанс получить на %amount%% больше опыта с руд.'
+  Weight: 5
+  MaxLevel: 3
+  MinCost:
+    Base: 4
+    Per_Level: 20
+  MaxCost:
+    Base: 7
+    Per_Level: 20
+  AnvilCost: 1
+  SupportedItems: pickaxe
+  PrimaryItems: pickaxe
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - JUNGLE_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 20.0
+    Per_Level: 10.0
+    Capacity: 100.0
+    Action: ADD
+LuckyMiner:
+  # XP Modifier. Amount of dropped XP will be multiplied on this value.
+  XP_Modifier:
+    Base: 1.0
+    Per_Level: 0.5
+    Capacity: 3.0
+    Action: ADD

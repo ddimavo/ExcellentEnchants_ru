@@ -1,0 +1,43 @@
+# ▒▓███████▓▒░ infernus.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Инфернус
+  Description:
+  - Брошенный трезубец поджигает врага на %time% сек. при попадании.
+  Weight: 10
+  MaxLevel: 3
+  MinCost:
+    Base: 5
+    Per_Level: 19
+  MaxCost:
+    Base: 11
+    Per_Level: 19
+  AnvilCost: 5
+  SupportedItems: trident
+  PrimaryItems: trident
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - SAVANNA_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+ArrowEffects:
+  # Sets projectile particle trail effect.
+  Trail:
+    Name: FLAME
+Infernus:
+  # Sets for how long (in ticks) entity will be ignited on hit. 20 ticks = 1 second.
+  Fire_Ticks:
+    Base: 60.0
+    Per_Level: 20.0
+    Capacity: 120.0
+    Action: ADD

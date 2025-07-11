@@ -1,0 +1,51 @@
+# ▒▓███████▓▒░ ice_aspect.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Ледяное жало
+  Description:
+  - Замораживает и накладывает %enchantment_potion_type% %enchantment_potion_level% (%enchantment_potion_duration% сек.) при ударе.
+  Weight: 10
+  MaxLevel: 3
+  MinCost:
+    Base: 5
+    Per_Level: 17
+  MaxCost:
+    Base: 12
+    Per_Level: 17
+  AnvilCost: 5
+  SupportedItems: swords_axes
+  PrimaryItems: sword
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - SNOW_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 100.0
+    Per_Level: 0.0
+    Capacity: 100.0
+    Action: ADD
+PotionEffect:
+  # Effect duration (in seconds).
+  Duration:
+    Base: 3.0
+    Per_Level: 1.0
+    Capacity: 10.0
+    Action: ADD
+  # Effect amplifier.
+  Amplifier:
+    Base: 0.0
+    Per_Level: 1.0
+    Capacity: 5.0
+    Action: ADD

@@ -1,0 +1,44 @@
+Definition:
+  DisplayName: Ракета
+  Description:
+  - '%enchantment_trigger_chance%% шанс запустить врага в воздух.'
+  Weight: 5
+  MaxLevel: 3
+  MinCost:
+    Base: 1
+    Per_Level: 18
+  MaxCost:
+    Base: 7
+    Per_Level: 18
+  AnvilCost: 6
+  SupportedItems: swords_axes
+  PrimaryItems: sword
+  Exclusives: []
+Distribution:
+  Treasure: true
+  Tradeable: true
+  TradeTypes:
+  - JUNGLE_COMMON
+  On_Mob_Spawn_Equipment: false
+  On_Traded_Equipment: false
+  On_Random_Loot: true
+  Discoverable: false
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 0.0
+    Per_Level: 2.0
+    Capacity: 100.0
+    Action: ADD
+Rocket:
+  # Firework power. The more power = the higher fly distance.
+  Firework_Power:
+    Base: 1.0
+    Per_Level: 0.25
+    Capacity: 3.0
+    Action: ADD

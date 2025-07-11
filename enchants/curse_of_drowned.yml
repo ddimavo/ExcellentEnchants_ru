@@ -1,0 +1,38 @@
+# ▒▓███████▓▒░ curse_of_drowned.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Проклятие Утопленника
+  Description:
+  - '%enchantment_trigger_chance%% шанс выловить Зомби-утопленника.'
+  Weight: 5
+  MaxLevel: 3
+  MinCost:
+    Base: 1
+    Per_Level: 16
+  MaxCost:
+    Base: 5
+    Per_Level: 16
+  AnvilCost: 5
+  SupportedItems: fishing_rod
+  PrimaryItems: fishing_rod
+  Exclusives: []
+Distribution:
+  Treasure: true
+  Tradeable: true
+  TradeTypes:
+  - SWAMP_COMMON
+  On_Mob_Spawn_Equipment: false
+  On_Traded_Equipment: false
+  On_Random_Loot: true
+  Discoverable: false
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 5.0
+    Per_Level: 5.0
+    Capacity: 100.0
+    Action: ADD

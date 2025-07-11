@@ -1,0 +1,32 @@
+# ▒▓███████▓▒░ glassbreaker.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Стеклодробитель
+  Description:
+  - Мгновенно разбивает стекло.
+  Weight: 10
+  MaxLevel: 1
+  MinCost:
+    Base: 1
+    Per_Level: 48
+  MaxCost:
+    Base: 48
+    Per_Level: 48
+  AnvilCost: 3
+  SupportedItems: tool
+  PrimaryItems: mining_tools
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - DESERT_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true

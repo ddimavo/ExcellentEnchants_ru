@@ -1,0 +1,58 @@
+# ▒▓███████▓▒░ dragonfire_arrows.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Стрелы драконьего огня
+  Description:
+  - '%enchantment_trigger_chance%% шанс, что стрела получит эффект драконьего огня (R=%radius%, %duration% сек.).'
+  Weight: 2
+  MaxLevel: 3
+  MinCost:
+    Base: 2
+    Per_Level: 17
+  MaxCost:
+    Base: 9
+    Per_Level: 17
+  AnvilCost: 8
+  SupportedItems: bow_crossbow
+  PrimaryItems: bow_crossbow
+  Exclusives:
+  - excellentenchants:ender_bow
+  - excellentenchants:bomber
+  - excellentenchants:ghast
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - SWAMP_SPECIAL
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+ArrowEffects:
+  # Sets projectile particle trail effect.
+  Trail:
+    Name: DRAGON_BREATH
+Probability:
+  Trigger_Chance:
+    Base: 4.0
+    Per_Level: 3.0
+    Capacity: 100.0
+    Action: ADD
+Dragonfire:
+  # Dragonfire cloud effect duration (in ticks). 20 ticks = 1 second.
+  Duration:
+    Base: 40.0
+    Per_Level: 20.0
+    Capacity: 1200.0
+    Action: ADD
+  # Dragonfire cloud effect radius.
+  Radius:
+    Base: 0.0
+    Per_Level: 1.0
+    Capacity: 5.0
+    Action: ADD

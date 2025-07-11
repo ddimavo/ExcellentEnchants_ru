@@ -1,0 +1,52 @@
+# ▒▓███████▓▒░ ghast.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Гаст
+  Description:
+  - Стреляет огненными шарами вместо стрел.
+  Weight: 1
+  MaxLevel: 1
+  MinCost:
+    Base: 4
+    Per_Level: 56
+  MaxCost:
+    Base: 56
+    Per_Level: 56
+  AnvilCost: 3
+  SupportedItems: bow_crossbow
+  PrimaryItems: bow_crossbow
+  Exclusives:
+  - minecraft:power
+  - excellentenchants:ender_bow
+  - minecraft:flame
+  - excellentenchants:ghast
+  - minecraft:punch
+Distribution:
+  Treasure: true
+  Tradeable: true
+  TradeTypes:
+  - DESERT_COMMON
+  On_Mob_Spawn_Equipment: false
+  On_Traded_Equipment: false
+  On_Random_Loot: true
+  Discoverable: false
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 100.0
+    Per_Level: 0.0
+    Capacity: 100.0
+    Action: ADD
+Fireball:
+  # Controls whether fireball explosion sets nearby blocks on fire.
+  Fire_Spread: true
+  # Fireball explosion power.
+  Yield:
+    Base: 2.0
+    Per_Level: 0.0
+    Capacity: 5.0
+    Action: ADD

@@ -1,0 +1,32 @@
+Definition:
+  DisplayName: Привязанный
+  Description:
+  - Защищает от выпадения при смерти.
+  Weight: 2
+  MaxLevel: 1
+  MinCost:
+    Base: 4
+    Per_Level: 64
+  MaxCost:
+    Base: 64
+    Per_Level: 64
+  AnvilCost: 5
+  SupportedItems: breakable
+  PrimaryItems: breakable
+  Exclusives:
+  - minecraft:vanishing_curse
+Distribution:
+  Treasure: true
+  Tradeable: true
+  TradeTypes:
+  - DESERT_SPECIAL
+  On_Mob_Spawn_Equipment: false
+  On_Traded_Equipment: false
+  On_Random_Loot: true
+  Discoverable: false
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true

@@ -1,0 +1,32 @@
+# ▒▓███████▓▒░ curse_of_fragility.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Проклятие Хрупкости
+  Description:
+  - Запрещает ремонт предмета на точиле или наковальне.
+  Weight: 10
+  MaxLevel: 1
+  MinCost:
+    Base: 2
+    Per_Level: 51
+  MaxCost:
+    Base: 51
+    Per_Level: 51
+  AnvilCost: 7
+  SupportedItems: breakable
+  PrimaryItems: breakable
+  Exclusives: []
+Distribution:
+  Treasure: true
+  Tradeable: true
+  TradeTypes:
+  - TAIGA_COMMON
+  On_Mob_Spawn_Equipment: false
+  On_Traded_Equipment: false
+  On_Random_Loot: true
+  Discoverable: false
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true

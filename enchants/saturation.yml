@@ -1,0 +1,49 @@
+Definition:
+  DisplayName: Насыщение
+  Description:
+  - Восстанавливает %amount% очков сытости каждые несколько секунд.
+  Weight: 2
+  MaxLevel: 2
+  MinCost:
+    Base: 3
+    Per_Level: 28
+  MaxCost:
+    Base: 7
+    Per_Level: 28
+  AnvilCost: 6
+  SupportedItems: helmet
+  PrimaryItems: helmet
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - SAVANNA_SPECIAL
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Period:
+  # Only triggers if the age (ticks lived) of the entity is divisible by the given number.
+  # Should be greater than and divisible by the global 'Tick_Interval' in the main plugin config.
+  # [20 ticks = 1 second]
+  Interval: 15
+Saturation:
+  # Amount of food points to restore.
+  Amount:
+    Base: 0.0
+    Per_Level: 1.0
+    Capacity: 5.0
+    Action: ADD
+  # Max. food level where saturation stops.
+  Max_Food_Level:
+    Base: 20.0
+    Per_Level: 0.0
+    Capacity: -1.0
+    Action: ADD

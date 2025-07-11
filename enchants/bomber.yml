@@ -1,0 +1,69 @@
+# ▒▓███████▓▒░ bomber.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Бомбардир
+  Description:
+  - '%enchantment_trigger_chance%% шанс выстрелить подожжённой TNT с таймером %time% сек.'
+  Weight: 1
+  MaxLevel: 3
+  MinCost:
+    Base: 1
+    Per_Level: 19
+  MaxCost:
+    Base: 6
+    Per_Level: 19
+  AnvilCost: 4
+  SupportedItems: bow_crossbow
+  PrimaryItems: bow_crossbow
+  Exclusives:
+  - minecraft:power
+  - excellentenchants:ender_bow
+  - minecraft:flame
+  - excellentenchants:ghast
+  - minecraft:punch
+Distribution:
+  Treasure: true
+  Tradeable: true
+  TradeTypes:
+  - DESERT_SPECIAL
+  On_Mob_Spawn_Equipment: false
+  On_Traded_Equipment: false
+  On_Random_Loot: true
+  Discoverable: false
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 100.0
+    Per_Level: 0.0
+    Capacity: 100.0
+    Action: ADD
+Charges:
+  # Maximum amount of charges for the enchantment.
+  Max_Amount:
+    Base: 50.0
+    Per_Level: 10.0
+    Capacity: -1.0
+    Action: ADD
+  # Controls how many charges consumed when enchantment is triggered.
+  Consume_Amount: 1
+  # Controls how many charges added per fuel item.
+  Recharge_Amount: 1
+  CustomFuel:
+    # Controls if custom fuel item should be used for this enchantment.
+    Enabled: true
+    # Custom fuel item.
+    # https://nightexpressdev.com/nightcore/configuration/item-formation/
+    Item:
+      Material: minecraft:tnt
+      Lore: []
+Bomber:
+  # Sets TNT fuse ticks.
+  Fuse_Ticks:
+    Base: 40.0
+    Per_Level: 10.0
+    Capacity: 200.0
+    Action: ADD

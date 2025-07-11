@@ -1,0 +1,44 @@
+Definition:
+  DisplayName: Восстановление
+  Description:
+  - '%enchantment_trigger_chance%% шанс восстановить предмет до %amount%% прочности при поломке.'
+  Weight: 2
+  MaxLevel: 3
+  MinCost:
+    Base: 1
+    Per_Level: 20
+  MaxCost:
+    Base: 5
+    Per_Level: 20
+  AnvilCost: 8
+  SupportedItems: breakable
+  PrimaryItems: breakable
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - DESERT_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 20.0
+    Per_Level: 5.0
+    Capacity: 100.0
+    Action: ADD
+Restore:
+  # Amount of durability (in percent of item max) to be restored.
+  Amount:
+    Base: 15.0
+    Per_Level: 5.0
+    Capacity: 100.0
+    Action: ADD

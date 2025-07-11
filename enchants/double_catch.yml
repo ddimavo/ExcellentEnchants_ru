@@ -1,0 +1,38 @@
+# ▒▓███████▓▒░ double_catch.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Двойной улов
+  Description:
+  - Шанс %enchantment_trigger_chance%% увеличить количество пойманного предмета в 2 раза.
+  Weight: 2
+  MaxLevel: 3
+  MinCost:
+    Base: 1
+    Per_Level: 16
+  MaxCost:
+    Base: 4
+    Per_Level: 16
+  AnvilCost: 6
+  SupportedItems: fishing_rod
+  PrimaryItems: fishing_rod
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - PLAINS_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 4.0
+    Per_Level: 2.0
+    Capacity: 100.0
+    Action: ADD

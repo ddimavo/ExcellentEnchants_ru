@@ -1,0 +1,46 @@
+# ▒▓███████▓▒░ curse_of_breaking.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Проклятие Хрупкости
+  Description:
+  - '%enchantment_trigger_chance%% шанс потратить дополнительные %amount% очков прочности.'
+  Weight: 10
+  MaxLevel: 3
+  MinCost:
+    Base: 1
+    Per_Level: 19
+  MaxCost:
+    Base: 8
+    Per_Level: 19
+  AnvilCost: 2
+  SupportedItems: breakable
+  PrimaryItems: breakable
+  Exclusives:
+  - minecraft:unbreaking
+Distribution:
+  Treasure: true
+  Tradeable: true
+  TradeTypes:
+  - SAVANNA_COMMON
+  On_Mob_Spawn_Equipment: false
+  On_Traded_Equipment: false
+  On_Random_Loot: true
+  Discoverable: false
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 0.0
+    Per_Level: 10.0
+    Capacity: 100.0
+    Action: ADD
+CurseOfBreaking:
+  # Amount of durability points to be taken from the item.
+  Amount:
+    Base: 0.0
+    Per_Level: 1.0
+    Capacity: 5.0
+    Action: ADD

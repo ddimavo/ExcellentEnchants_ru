@@ -1,0 +1,46 @@
+# ▒▓███████▓▒░ flame_walker.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Огнеход
+  Description:
+  - Позволяет ходить по лаве, иммунитет к урону от магмы.
+  Weight: 1
+  MaxLevel: 2
+  MinCost:
+    Base: 5
+    Per_Level: 23
+  MaxCost:
+    Base: 10
+    Per_Level: 23
+  AnvilCost: 8
+  SupportedItems: boots
+  PrimaryItems: boots
+  Exclusives:
+  - minecraft:frost_walker
+Distribution:
+  Treasure: true
+  Tradeable: true
+  TradeTypes:
+  - DESERT_SPECIAL
+  On_Mob_Spawn_Equipment: false
+  On_Traded_Equipment: false
+  On_Random_Loot: true
+  Discoverable: false
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+FlameWalker:
+  # Square radius around the block to transform into magma block.
+  Radius:
+    Base: 1.0
+    Per_Level: 1.0
+    Capacity: 16.0
+    Action: ADD
+  # Sets life time for magma blocks before turning back into lava.
+  Block_Decay:
+    Base: 8.0
+    Per_Level: 1.0
+    Capacity: 15.0
+    Action: ADD

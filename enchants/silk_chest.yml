@@ -1,0 +1,39 @@
+Definition:
+  DisplayName: Шёлковый Сундук
+  Description:
+  - Добывает сундуки с сохранением содержимого.
+  Weight: 1
+  MaxLevel: 1
+  MinCost:
+    Base: 3
+    Per_Level: 65
+  MaxCost:
+    Base: 65
+    Per_Level: 65
+  AnvilCost: 4
+  SupportedItems: mining_tools
+  PrimaryItems: axe
+  Exclusives:
+  - excellentenchants:smelter
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - SAVANNA_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+SilkChest:
+  # Chest item display name.
+  # Use '%amount%' for items amount.
+  Name: Сундук (%amount% предметов)
+  # Chest item lore.
+  # Use '%amount%' for items amount.
+  Lore: []

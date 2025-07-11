@@ -1,0 +1,51 @@
+# ▒▓███████▓▒░ blast_mining.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Взрывная добыча
+  Description:
+  - '%enchantment_trigger_chance%% шанс добыть блоки взрывом.'
+  Weight: 2
+  MaxLevel: 5
+  MinCost:
+    Base: 5
+    Per_Level: 13
+  MaxCost:
+    Base: 9
+    Per_Level: 13
+  AnvilCost: 1
+  SupportedItems: pickaxe
+  PrimaryItems: pickaxe
+  Exclusives:
+  - excellentenchants:veinminer
+  - excellentenchants:tunnel
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - PLAINS_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 0.0
+    Per_Level: 10.0
+    Capacity: 100.0
+    Action: ADD
+BlastMining:
+  # Explosion power. The more power = the more blocks (area) to explode.
+  Explosion_Power:
+    Base: 3.0
+    Per_Level: 0.75
+    Capacity: 8.0
+    Action: ADD
+  # Minimal block strength value for the enchantment to have effect.
+  # Block strength value is how long it takes to break the block by a hand.
+  # For example, a Stone has 3.0 strength.
+  Min_Block_Strength: 1.3

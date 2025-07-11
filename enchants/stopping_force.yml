@@ -1,0 +1,45 @@
+Definition:
+  DisplayName: Сдерживающая Сила
+  Description:
+  - '%enchantment_trigger_chance%% шанс уменьшить отбрасывание на %amount%%.'
+  Weight: 5
+  MaxLevel: 3
+  MinCost:
+    Base: 1
+    Per_Level: 19
+  MaxCost:
+    Base: 6
+    Per_Level: 19
+  AnvilCost: 8
+  SupportedItems: leggings
+  PrimaryItems: leggings
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - PLAINS_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 100.0
+    Per_Level: 0.0
+    Capacity: 100.0
+    Action: ADD
+Knockback:
+  # Sets the knockback multiplier when taking damage.
+  # Lower value = less knockback.
+  Reduction:
+    Base: 0.3
+    Per_Level: 0.2
+    Capacity: 1.0
+    Action: ADD

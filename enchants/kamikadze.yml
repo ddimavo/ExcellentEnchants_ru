@@ -1,0 +1,47 @@
+# ▒▓███████▓▒░ kamikadze.yml ▒▓███████▓▒░
+Definition:
+  DisplayName: Камикадзе
+  Description:
+  - '%enchantment_trigger_chance%% шанс взорваться при смерти.'
+  Weight: 5
+  MaxLevel: 3
+  MinCost:
+    Base: 3
+    Per_Level: 17
+  MaxCost:
+    Base: 9
+    Per_Level: 17
+  AnvilCost: 6
+  SupportedItems: chestplate_elytra
+  PrimaryItems: chestplate
+  Exclusives: []
+Distribution:
+  Treasure: false
+  Tradeable: true
+  TradeTypes:
+  - JUNGLE_COMMON
+  On_Mob_Spawn_Equipment: true
+  On_Traded_Equipment: true
+  On_Random_Loot: true
+  Discoverable: true
+Settings:
+  # Sets whether or not this enchantment will be hidden from Enchants GUI.
+  Hide_From_List: false
+  VisualEffects:
+    # Enables enchantment visual effects (mostly particles).
+    Enabled: true
+Probability:
+  Trigger_Chance:
+    Base: 0.0
+    Per_Level: 3.0
+    Capacity: 100.0
+    Action: ADD
+Kamikadze:
+  # Sets whether or not enchantment will trigger on resurrect (when a totem is used).
+  Apply_On_Resurrect: true
+  # Explosion power.
+  Explosion_Power:
+    Base: 1.0
+    Per_Level: 1.0
+    Capacity: 5.0
+    Action: ADD
